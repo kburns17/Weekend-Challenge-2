@@ -1,5 +1,12 @@
 body {
-    background-color: oldlace;
+    background-color: rgb(84, 68, 99);
+}
+
+
+h1 {
+  background-color: rgb(245, 241, 17);
+  text-align: center;
+  color: black;
 }
 
 table{
@@ -12,7 +19,7 @@ table{
     border: 1px solid black;
   }
   th {
-    background-color: steelblue;
-    color: white;
+    background-color: rgb(245, 241, 17);
+    color: black;
     font-size: 18px;
   }
