@@ -11,19 +11,23 @@
     <script src="scripts/client.js"></script>
 </head>
 <body>
-    
-        <h1>Weekend 2 Assignment</h1>
+    <h1>Weekend 2 Assignment</h1>
+    <form>
         <input id="num1"type="number" placeholder="Number 1">
         <input id="num2"type="number" placeholder="Number 2">
-        <button id="add">Add</button>
-        <button id="subtract">Subtract</button>
-        <button id="multiply">Multiply</button>
-        <button id="divide">Divide</button>
+        <button type="reset" id="add">Add</button>
+        <button type="reset" id="subtract">Subtract</button>
+        <button type="reset" id="multiply">Multiply</button>
+        <button type="reset" id="divide">Divide</button>
+    </form>
     <table>
         <thead><tr><th>Number 1</th><th>Number 2</th><th>Math Type</th><th>Answer</th></tr></thead>
         <tbody class="container"></tbody>
 
 
     </table>
+    <div>
+        <button id="clearHistory">Clear History</button>
+    </div>
 </body>
 </html>

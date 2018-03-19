@@ -9,7 +9,6 @@ let equationCollection = [];
 
 //adding equation
 app.post('/equation', (req, res) => {
-    console.log(req.body);
     let numbersToRun = req.body;
     doMath(numbersToRun);
     equationCollection.push(numbersToRun);
@@ -25,9 +24,7 @@ app.get('/equation', (req, res) => {
 function doMath( numbers ) {
     if (numbers.type === "add") {
         let sum = parseInt(numbers.firstNumber) + parseInt(numbers.secondNumber);
-        console.log('sum', sum);
         numbers.total = sum;
-        console.log(numbers);
     } else if (numbers.type === "subtract") {
          let difference = parseInt(numbers.firstNumber) - parseInt(numbers.secondNumber);
          numbers.total = difference;

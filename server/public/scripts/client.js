@@ -5,6 +5,7 @@ function readyNow() {
     $('#subtract').on('click', subtractNumbers)
     $('#multiply').on('click', multiplyNumbers)
     $('#divide').on('click', divideNumbers)
+    $('#clearHistory').on('click', clearHistory)
 }
 function divideNumbers() {
     let num1 = $('#num1').val();
@@ -21,7 +22,7 @@ function divideNumbers() {
     }).fail(function(response){
         alert('Something went wrong...')
     })
-} // end subtractNumbers
+} // end divideNumbers
 
 function multiplyNumbers() {
     let num1 = $('#num1').val();
@@ -38,7 +39,7 @@ function multiplyNumbers() {
     }).fail(function(response){
         alert('Something went wrong...')
     })
-} // end subtractNumbers
+} // end multiplyNumbers
 
 function subtractNumbers() {
     let num1 = $('#num1').val();
@@ -79,7 +80,6 @@ function getAllEquations() {
         type: 'GET',
         url: '/equation',
     }).done(function(response){
-        console.log(response);
         appendToDom(response);
         //the reponse is our gameCollection array
     }) 
@@ -94,5 +94,9 @@ function appendToDom(equationCollection) {
         tr.append('<td>' + equation.total + '</td>')
         $('.container').append(tr);
     }
+}
+function clearHistory() {
+    console.log('in clearHistory');
+    $('.container').empty();
 }
 
