@@ -22,7 +22,7 @@ app.get('/equation', (req, res) => {
 });
 
 function doMath( numbers ) {
-    if (numbers.type === "add") {
+    if (numbers.type == "add") {
         let sum = parseInt(numbers.firstNumber) + parseInt(numbers.secondNumber);
         numbers.total = sum;
     } else if (numbers.type === "subtract") {
@@ -38,5 +38,5 @@ function doMath( numbers ) {
 }
 
 app.listen(5000, () => {
-    console.log('app is running on port 5000');
+    console.log('app is running on port:', PORT);
 });
