@@ -1,4 +1,18 @@
 .container {
-border: 1px;
-color: black;
+    
 }
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  th {
+    background-color: steelblue;
+    color: white;
+    font-size: 18px;
+  }

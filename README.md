@@ -2,10 +2,10 @@
 
 - [x] Create a static server and source all files
 - [x] Build 2 inputs and 4 buttons log to DOM
-- [ ] Create a post to server
-- [ ] Create logic for equation on server side
+- [x] Create a post to server
+- [ ] Create logic for equation on server side - if else
 - [ ] Create a get
-- [ ] if then for math
+- [ ] 
 - [ ] 
 - [ ] Post history
 - [ ] 
